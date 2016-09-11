@@ -1,0 +1,107 @@
+<html><head>
+    <link rel="stylesheet" type="text/css" href="css/jquery.jdigiclock.css">
+    <script type="text/javascript" src="lib/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.jdigiclock.js"></script>
+    <meta charset="utf-8">
+    <title>三维空间立体式导航菜单</title>
+    <link rel="stylesheet" href="css/lanrenzhijia.css">
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('#digiclock').jdigiclock({
+              // Configuration goes here
+          });
+      });
+    </script>
+  </head><body>
+    <div id="digiclock">aaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+    <!-- 代码部分begin
+    -->
+    <div class="meny">
+      <h2 class="text-center">绘 忆 科 技</h2>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="service.html">Service</a>
+        </li>
+        <li>
+          <a href="production.html">Production</a>
+        </li>
+        <li>
+          <a href="cooperation.html">Cooperation</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="login.html">Login  in</a>
+        </li>
+        <li>
+          <a href="regist.html">Sign  up</a>
+        </li>
+        <li>
+          <a href="http://news.baidu.com/">News</a>
+        </li>
+        <li>
+          <a href="http://mgame.baidu.com/">Games</a>
+        </li>
+        <li>
+          <a href="more.html">More</a>
+        </li>
+      </ul>
+    </div>
+    <div class="meny-arrow"></div>
+    <div class="contents">
+      <center>
+        <article style="padding-top:70px;padding-bottom:50px;">
+          <h1 class="text-center">Meny</h1>
+          <p>A three dimensional and space efficient menu.</p>
+          <p>Move your mouse towards the arrow — or swipe in from the arrow if you're
+            on a touch device — to open. Test it with any page by appending a URL,
+            like so:
+            <a href="#">lab.hakim.se/meny/?u=http://hakim.se.</a>
+          </p>
+          <p>Meny can be positioned on any side of the screen:
+            <br>
+            <a href="#">top</a>-
+            <a href="#">right</a>-
+            <a href="#">bottom</a>-
+            <a href="#">left</a>
+          </p>
+          <p>Instructions and download at
+            <a href="#">github.com/hakimel/meny</a>.</p>
+          <p>The name,
+            <em>Meny</em>, is swedish.</p>
+          <small>Created by
+            <a href="#">@hakimel</a>/
+            <a href="#">http://hakim.se</a>
+          </small>
+        </article>
+      </center>
+      <div class="sharing">
+        <a href="#" class="twitter-share-button" data-text="lanrenzhijia" data-url="#" data-count="small" data-related="hakimel"></a>
+      </div>
+    </div>
+    <script src="js/meny.min.js"></script>
+    <script>
+      var meny = Meny.create({
+            		menuElement: document.querySelector( '.meny' ),
+            		contentsElement: document.querySelector( '.contents' ),
+            		position: Meny.getQuery().p || 'left',
+            		height: 200,
+            		width: 260,
+            		threshold: 40,
+            		mouse: true,
+            		touch: true
+            	});
+            	if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {
+            		var contents = document.querySelector( '.contents' );
+            		contents.style.padding = '0px';
+            		contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+            	}
+    </script>
+    <!-- 代码部分end -->
+  
+
+</body></html>

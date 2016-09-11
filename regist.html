@@ -1,0 +1,107 @@
+<html><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="login.css" rel="stylesheet" type="text/css">
+        <style>
+            body{margin:0;padding:0;background:black;}
+                      col-md-6 text-center{width:900px;}
+        </style>
+    </head><body>
+        <div class="navbar navbar-default navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand"><img height="20" alt="Brand" src="images\logo.jpg" class="center-block img-circle"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                    <ul class="nav navbar-nav navbar-inverse navbar-left">
+                        <li class="active">
+                            <a href="index.html">主页</a>
+                        </li>
+                        <li class="active">
+                            <div class="btn-group btn-group-lg">
+                                <a class="btn btn-link dropdown-toggle" data-toggle="dropdown"> 服务 <span class="et-down fa fa-arrow-down fa-fw text-success"></span></a>
+                                <ul class="dropdown-menu" role="menu" text="center" style="background-color:#fff">
+                                    <center>
+                                        <li>
+                                            <span class="et-down fa fa-lg text-success fa-arrow-right">
+                                                <a href="service.html">服务1</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="et-down fa fa-lg text-success fa-arrow-right">
+                                                <a href="service.html">服务2</a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="et-down fa fa-lg text-success fa-arrow-right">
+                                                <a href="service.html">服务3</a>
+                                            </span>
+                                        </li>
+                                    </center>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="production.html">产品</a>
+                        </li>
+                        <li>
+                            <a href="cooperation.html">合作</a>
+                        </li>
+                        <li class="active">
+                            <a href="login.html" class="active btn btn-info btn-sm" id="loginin"><i class="fa fa-arrow-circle-o-down fa-fw fa-pulse"></i>&nbsp;LOGIN &nbsp; &nbsp;IN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section text-center">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12 text-center">
+                        <form role="form" action="valid.json" id="valid_form" class="text-center">
+                            <div class="form-group has-error has-feedback">
+                                <label class="control-label" for="exampleInputEmail1">邮箱</label>
+                                <input class="form-control input-lg" id="exampleInputEmail1" placeholder="电子邮箱" type="email" name="email">
+                                <span class="fa form-control-feedback fa-envelope"></span>
+                            </div>
+                            <div class="form-group has-error has-feedback">
+                                <label class="control-label" for="exampleInputPassword1">密码</label>
+                                <input class="form-control input-lg" id="exampleInputPassword1" placeholder="您的密码" type="password" name="pass">
+                                <span class="fa fa-check form-control-feedback"></span>
+                            </div>
+                            <div class="col-md-12 text-center"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="background-image" style="background-image : url('https://unsplash.imgix.net/photo-1423683249427-8ca22bd873e0?w=1024&amp;q=50&amp;fm=jpg&amp;s=5e57c661d0f772ce269188a6f5325708')"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a class="btn btn-block btn-lg btn-success" name="regist"><b>注 &nbsp; &nbsp; 册 &nbsp;&nbsp;<i class="fa fa-fw fa-user"></i></b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <p class="lead pull-right">
+                <a href="#top" class="lead text-center text-danger"><i class="fa fa-arrow-circle-up fa-fw fa-spin text-danger"></i>&nbsp;回到顶部</a>
+            </p>
+            <p class="lead text-center text-muted">@2016 copyright by Tang</p>
+        </footer>
+        <hr>
+    
+
+</body></html>
